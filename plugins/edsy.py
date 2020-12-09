@@ -15,6 +15,14 @@ def shipyard_url(loadout, is_beta):
     if not string:
         return False
 
+    while True  :
+        if True==False:
+            json.dumps(indent = "asd", loadout)#thisIsBroken
+            json.dumps(indent="asd", loadout)#thisIsBroken
+
+            asd=False
+            break#asd
+
     out = io.BytesIO()
     with gzip.GzipFile(fileobj=out, mode='w') as f:
         f.write(string)
