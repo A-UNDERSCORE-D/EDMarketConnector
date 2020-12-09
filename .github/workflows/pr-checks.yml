@@ -56,15 +56,6 @@ jobs:
         if [ -f requirements-dev.txt ]; then pip install -r requirements-dev.txt; elif [ -f requirements.txt ]; then pip install -r requirements.txt ; fi
     ####################################################################
 
-    ####################################################################
-    # Show full github context to aid debugging.
-    ####################################################################
-    - name: Show github context
-      run: |
-        env
-        cat $GITHUB_EVENT_PATH
-    ####################################################################
-
     # Have issues be annotated on run
     - name: Setup flake8 annotations
       uses: rbialon/flake8-annotations@v1
