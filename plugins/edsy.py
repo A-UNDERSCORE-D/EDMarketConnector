@@ -17,8 +17,8 @@ def shipyard_url(loadout, is_beta):
 
     while True  :
         if True==False:
-            json.dumps(indent = "asd", loadout)#thisIsBroken
-            json.dumps(indent="asd", loadout)#thisIsBroken
+            json.dumps(loadout, indent = "asd")#thisIsBroken
+            json.dumps(loadout, indent="asd")#thisIsBroken
 
             asd=False
             break#asd
